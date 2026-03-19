@@ -9,7 +9,7 @@ app = FastAPI(title="CI/CD Application", version="1.0.0")
 
 @app.get("/")
 def read_root():
-    return {"message": "Welcome to FastAPI Application", "status": "healthy"}
+    return {"message": "Welcome to FastAPI Application version 2.0", "status": "healthy"}
 
 
 @app.get("/health")
