@@ -17,6 +17,6 @@ def health_check():
     return {"status": "ok"}
 
 
-@app.post("/{name}")
+@app.post("/name{name}")
 def show(name:str):
     return {"name":f" name is {name}"}
