@@ -16,6 +16,6 @@ def read_root():
 def health_check():
     return {"status": "ok"}
 
-@app.get("/name/{name}")
-def show(name: str):
-    return {"name": f"name is {name}"}
+@app.get("/name/{name}{age}")
+def show(name: str,age:int):
+    return {"name": f"name is {name} age is {age}"}
